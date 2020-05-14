@@ -1,6 +1,8 @@
 PipTheme by Pipfrosch Press
 ===========================
 
+Work in progress. I do not recommend use in production.
+
 This is a fork of the Simome WordPress theme intended to meet the needs of
 Pipfrosch Press.
 
@@ -21,9 +23,12 @@ Important WebFont Notes
 In the `fonts/` directory is a `.htacess` file that at least in the Apache web
 server with the correct Apache modules installed (`mod_mime` and `mod_expires`
 which are both standard modules) will ensure that the webfonts are served with
-the correct MIME type (`font/woff2`) and makes sure that the proper is sent
+the correct MIME type (`font/woff2`) and makes sure that the proper expires
+header is sent
 with both the fonts as the CSS files to allow the browser to cache them for one
-month. If your server is not Apache or if you disable `.htaccess` files within
+month.
+
+If your server is not Apache or if you disable `.htaccess` files within
 the web root, make sure your server is otherwise configured to send the correct
 MIME type for WOFF2 web fonts and that browsers know they can cache the web
 fonts for a long period of time. The cache time for the CSS is less critical,
