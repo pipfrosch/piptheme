@@ -24,9 +24,8 @@ In the `fonts/` directory is a `.htacess` file that at least in the Apache web
 server with the correct Apache modules installed (`mod_mime` and `mod_expires`
 which are both standard modules) will ensure that the webfonts are served with
 the correct MIME type (`font/woff2`) and makes sure that the proper expires
-header is sent
-with both the fonts as the CSS files to allow the browser to cache them for one
-month.
+header is sent with both the fonts and the CSS files to allow the browser to
+cache them for one month.
 
 If your server is not Apache or if you disable `.htaccess` files within
 the web root, make sure your server is otherwise configured to send the correct
@@ -58,3 +57,11 @@ The WOFF variant for FontAwesome is included for the benefit of IE11 users as
 it uses private unicode range so system fonts can not be substituted for it.
 
 
+INSTALL
+-------
+
+clone the repository and copy it into the `themes` directory of your WordPress
+install. Then you can activate it from within your admin panel.
+
+Please note presently there are some inconsistencies between the CSS as sent
+to browsers and the admin CSS, this is a work in progress.

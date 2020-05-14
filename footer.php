@@ -23,9 +23,9 @@
 			<span class="sep"> | </span>
 			<?php
 			printf(
-				/* translators: %1$s = text link: PipTheme, %2$s = text link: Pipfrosch Press, URL: https://pipfrosch.com/ */
+				/* translators: %1$s = github link: PipTheme, %2$s = text link: Pipfrosch Press, URL: https://pipfrosch.com/ */
 				__( 'Theme: %1$s by %2$s', 'piptheme' ),
-                                esc_attr( 'PipTheme', 'piptheme' ),
+                                '<a href="https://github.com/pipfrosch/piptheme" rel="designer nofollow">' . esc_attr__( 'PipTheme', 'piptheme' ) . '</a>', 
 				'<a href="https://pipfrosch.com/" rel="designer nofollow">' . esc_attr__( 'Pipfrosch Press', 'piptheme' ) . '</a>' ); ?>
 		    <br/><a href="/privacy-policy/">Privacy Policy</a>
 		</div><!-- .site-info -->
