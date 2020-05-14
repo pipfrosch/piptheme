@@ -1,0 +1,57 @@
+/* ClearSans Font - Apache License 2.0 */
+@font-face {
+  font-family: 'Clear Sans';
+  font-weight: 100;
+  font-style: normal;
+  src: local('Clear Sans Thin'), local('ClearSans Thin'), local('ClearSans-Thin'), url('../fonts/ClearSans-Thin.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Clear Sans';
+  font-weight: 300;
+  font-style: normal;
+  src: local('Clear Sans Light'), local('ClearSans Light'), local('ClearSans-Light'), url('../fonts/ClearSans-Light.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Clear Sans';
+  font-weight: 400;
+  font-style: normal;
+  src: local('Clear Sans Regular'), local('ClearSans Regular'), local('ClearSans-Regular'), url('../fonts/ClearSans-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Clear Sans';
+  font-weight: 400;
+  font-style: italic;
+  src: local('Clear Sans Italic'), local('ClearSans Italic'), local('ClearSans-Italic'), url('../fonts/ClearSans-Italic.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Clear Sans';
+  font-weight: 500;
+  font-style: normal;
+  src: local('Clear Sans Medium'), local('ClearSans Medium'), local('ClearSans-Medium'), url('../fonts/ClearSans-Medium.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Clear Sans';
+  font-weight: 500;
+  font-style: italic;
+  src: local('Clear Sans MediumItalic'), local('ClearSans MediumItalic'), local('ClearSans-MediumItalic'), url('../fonts/ClearSans-MediumItalic.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Clear Sans';
+  font-weight: 700;
+  font-style: normal;
+  src: local('Clear Sans Bold'), local('ClearSans Bold'), local('ClearSans-Bold'), url('../fonts/ClearSans-Bold.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Clear Sans';
+  font-weight: 700;
+  font-style: italic;
+  src: local('Clear Sans BoldItalic'), local('ClearSans BoldItalic'), local('ClearSans-BoldItalic'), url('../fonts/ClearSans-BoldItalic.woff2') format('woff2');
+  font-display: swap;
+}
