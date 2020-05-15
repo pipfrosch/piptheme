@@ -30,9 +30,8 @@
 				// https://wordpress.stackexchange.com/questions/314371/how-can-i-get-the-privacy-policy-page
 				$privacy_policy_page = get_option( 'wp_page_for_privacy_policy' );
 				if( $privacy_policy_page ) {
-				    $tl = __( 'Privacy Policy' );
-				    $permalink = esc_url( get_permalink( $privacy_policy_page ) );
-				    printf('<br/><a href="' . $privacy_policy_page . '">' . $tl . '"</a>"');
+				    printf( __( '<br/><a href="%1$s">Privacy Policy</a>', 'piptheme' ),
+				        esc_url( get_permalink( $privacy_policy_page )));
 				}?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
