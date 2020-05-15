@@ -38,3 +38,8 @@ Wednesday May 13, 2020 Michael A. Peters
 
 * Add .htaccess file to fonts/ directory to serve webfonts with proper mime type and set cache header font fonts and css
 * Add WOFF variant for FontAwesome
+
+Thursday May 14, 2020 Michael A. Peters
+---------------------------------------
+
+* Only link to privacy policy if page is created

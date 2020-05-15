@@ -26,8 +26,14 @@
 				/* translators: %1$s = github link: PipTheme, %2$s = text link: Pipfrosch Press, URL: https://pipfrosch.com/ */
 				__( 'Theme: %1$s by %2$s', 'piptheme' ),
                                 '<a href="https://github.com/pipfrosch/piptheme" rel="designer nofollow">' . esc_attr__( 'PipTheme', 'piptheme' ) . '</a>', 
-				'<a href="https://pipfrosch.com/" rel="designer nofollow">' . esc_attr__( 'Pipfrosch Press', 'piptheme' ) . '</a>' ); ?>
-		    <br/><a href="/privacy-policy/">Privacy Policy</a>
+				'<a href="https://pipfrosch.com/" rel="designer nofollow">' . esc_attr__( 'Pipfrosch Press', 'piptheme' ) . '</a>' );
+				// https://wordpress.stackexchange.com/questions/314371/how-can-i-get-the-privacy-policy-page
+				$privacy_policy_page = get_option( 'wp_page_for_privacy_policy' );
+				if( $privacy_policy_page ) {
+				    $tl = __( 'Privacy Policy' );
+				    $permalink = esc_url( get_permalink( $privacy_policy_page ) );
+				    printf('<br/><a href="' . $privacy_policy_page . '">' . $tl . '"</a>"');
+				}?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
