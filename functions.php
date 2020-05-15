@@ -147,7 +147,7 @@ function piptheme_scripts() {
         }
 
         // WebFonts
-        wp_enqueue_style('piptheme_lato', get_template_directory_uri() . '/fonts/webfonts.min-20200513.css');
+        wp_enqueue_style('piptheme_webfonts', get_template_directory_uri() . '/fonts/webfonts.min-20200513.css', array(), null);
 
         // Lato
         //wp_enqueue_style('piptheme_lato', get_template_directory_uri() . '/fonts/Lato/css/Lato.css');
