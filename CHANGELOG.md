@@ -43,3 +43,8 @@ Thursday May 14, 2020 Michael A. Peters
 ---------------------------------------
 
 * Only link to privacy policy if page is created
+
+Saturday May 16, 2020 Michael A. Peters
+---------------------------------------
+
+* Fix the ordered list numbering
