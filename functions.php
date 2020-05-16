@@ -128,18 +128,18 @@ function piptheme_scripts() {
         // Get the current layout setting (sidebar left or right)
         $piptheme_layout = get_option( 'layout_setting' );
         if ( is_page_template( 'page-templates/page-nosidebar.php' ) || ! is_active_sidebar( 'sidebar-1' ) ) {
-            $layout_stylesheet = '/layouts/no-sidebar.css';
+            $layout_stylesheet = '/layouts/no-sidebar-20200516.css';
         } elseif ( 'left-sidebar' == $piptheme_layout ) {
-            $layout_stylesheet =  '/layouts/sidebar-content.css';
+            $layout_stylesheet =  '/layouts/sidebar-content-20200516.css';
         } else {
-            $layout_stylesheet = '/layouts/content-sidebar.css';
+            $layout_stylesheet = '/layouts/content-sidebar-20200516.css';
         }
 
         // Load parent theme stylesheet even when child theme is active
-        wp_enqueue_style( 'piptheme-style', simon_get_parent_stylesheet_uri() );
+        wp_enqueue_style( 'piptheme-style', piptheme_get_parent_stylesheet_uri() );
 
         // Load layout stylesheet
-        wp_enqueue_style( 'piptheme-layout' , get_template_directory_uri() . $layout_stylesheet );
+        wp_enqueue_style( 'piptheme-layout' , get_template_directory_uri() . $layout_stylesheet, array(), null);
 
         // Load child theme stylesheet
         if ( is_child_theme() ) {
@@ -158,24 +158,24 @@ function piptheme_scripts() {
         // FontAwesome
         //wp_enqueue_style('piptheme_fontawesome', get_template_directory_uri() . '/fonts/font-awesome/css/font-awesome.css');
 
-		wp_enqueue_script( 'piptheme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+		wp_enqueue_script( 'piptheme-navigation', get_template_directory_uri() . '/js/navigation-20120206.js', array(), null, true );
 
-        wp_enqueue_script( 'piptheme-search', get_template_directory_uri() . '/js/hide-search.js', array(), '20120206', true );
+        wp_enqueue_script( 'piptheme-search', get_template_directory_uri() . '/js/hide-search.js-20120206', array(), null, true );
 
-        wp_enqueue_script( 'piptheme-superfish', get_template_directory_uri() . '/js/superfish.js', array('jquery'), '20180226', true );
+        wp_enqueue_script( 'piptheme-superfish', get_template_directory_uri() . '/js/superfish-20180226.js', array('jquery'), null, true );
 
-        wp_enqueue_script( 'piptheme-superfish-settings', get_template_directory_uri() . '/js/superfish-settings.js', array('jquery'), '20140328', true );
+        wp_enqueue_script( 'piptheme-superfish-settings', get_template_directory_uri() . '/js/superfish-settings-20140328.js', array('jquery'), null, true );
 
-        wp_enqueue_script( 'piptheme-masonry', get_template_directory_uri() . '/js/masonry-settings.js', array('masonry'), '20140401', true );
+        wp_enqueue_script( 'piptheme-masonry', get_template_directory_uri() . '/js/masonry-settings-20140401.js', array('masonry'), null, true );
 
-        wp_enqueue_script( 'piptheme-enquire', get_template_directory_uri() . '/js/enquire.js', false, '20170304', true );
+        wp_enqueue_script( 'piptheme-enquire', get_template_directory_uri() . '/js/enquire-20170304.js', false, null, true );
 
 
         if (is_single() || is_author() ) {
-        	wp_enqueue_script( 'piptheme-hide', get_template_directory_uri() . '/js/hide.js', array('jquery'), '20140310', true );
+        	wp_enqueue_script( 'piptheme-hide', get_template_directory_uri() . '/js/hide-20140310.js', array('jquery'), null, true );
         }
 
-	wp_enqueue_script( 'piptheme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+	wp_enqueue_script( 'piptheme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix-20130115.js', array(), null, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -186,7 +186,7 @@ add_action( 'wp_enqueue_scripts', 'piptheme_scripts' );
 /**
  * Return parent stylesheet URI
  */
-function simon_get_parent_stylesheet_uri() {
+function piptheme_get_parent_stylesheet_uri() {
 	if ( is_child_theme() ) {
 		return trailingslashit( get_template_directory_uri() ) . 'style.css';
 	} else {
