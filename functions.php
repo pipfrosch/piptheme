@@ -95,6 +95,12 @@ function piptheme_setup() {
 endif; // piptheme_setup
 add_action( 'after_setup_theme', 'piptheme_setup' );
 
+add_filter('stylesheet_uri'. 'piptheme_versioned_style');
+function piptheme_versioned_style() {
+  /* when updating also change reference in piptheme_get_parent_stylesheet_uri() */
+  return trailingslashit( get_template_directory_uri() ) . 'style-devel.css';
+}
+
 /**
  * Register widgetized area and update sidebar with default widgets.
  */
@@ -197,7 +203,7 @@ add_action( 'wp_enqueue_scripts', 'piptheme_scripts' );
  */
 function piptheme_get_parent_stylesheet_uri() {
 	if ( is_child_theme() ) {
-		return trailingslashit( get_template_directory_uri() ) . 'style.css';
+		return trailingslashit( get_template_directory_uri() ) . 'style-devel.css';
 	} else {
 		return get_stylesheet_uri();
 	}
