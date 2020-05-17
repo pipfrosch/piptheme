@@ -44,7 +44,7 @@ function piptheme_setup() {
         }
 
         // This theme styles the visual editor to resemble the theme style.
-        add_editor_style( array( 'inc/editor-style.css', 'fonts/Lato/css/Lato.css', 'fonts/ClearSans/css/ClearSans.css' ) );
+        add_editor_style( array( 'inc/editor-style-devel.css', 'fonts/Lato/css/Lato.css', 'fonts/ClearSans/css/ClearSans.css' ) );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
