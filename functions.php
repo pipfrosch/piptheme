@@ -123,6 +123,15 @@ add_action( 'widgets_init', 'piptheme_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
+
+function update_core_jquery() {
+  wp_deregister_script( 'jquery-core' );
+  wp_register_script( 'jquery-core', get_template_directory_uri() . '/js/jquery-3.5.1.min-20200516.js', array(), null );
+  wp_deregister_script( 'jquery-migrate' );
+  wp_register_script( 'jquery-migrate', get_template_directory_uri() . '/js/jquery-migrate-3.3.0.min-20200516.js', array(), null );
+}
+add_action( 'wp_enqueue_scripts', 'update_core_jquery' );
+
 function piptheme_scripts() {
 
         // Get the current layout setting (sidebar left or right)
@@ -162,9 +171,9 @@ function piptheme_scripts() {
 
         wp_enqueue_script( 'piptheme-search', get_template_directory_uri() . '/js/hide-search.js-20120206', array(), null, true );
 
-        wp_enqueue_script( 'piptheme-superfish', get_template_directory_uri() . '/js/superfish-20180226.js', array('jquery'), null, true );
+        wp_enqueue_script( 'piptheme-superfish', get_template_directory_uri() . '/js/superfish-20180226.js', array('jquery-core'), null, true );
 
-        wp_enqueue_script( 'piptheme-superfish-settings', get_template_directory_uri() . '/js/superfish-settings-20140328.js', array('jquery'), null, true );
+        wp_enqueue_script( 'piptheme-superfish-settings', get_template_directory_uri() . '/js/superfish-settings-20140328.js', array('jquery-core'), null, true );
 
         wp_enqueue_script( 'piptheme-masonry', get_template_directory_uri() . '/js/masonry-settings-20140401.js', array('masonry'), null, true );
 
@@ -172,7 +181,7 @@ function piptheme_scripts() {
 
 
         if (is_single() || is_author() ) {
-        	wp_enqueue_script( 'piptheme-hide', get_template_directory_uri() . '/js/hide-20140310.js', array('jquery'), null, true );
+        	wp_enqueue_script( 'piptheme-hide', get_template_directory_uri() . '/js/hide-20140310.js', array('jquery-core'), null, true );
         }
 
 	wp_enqueue_script( 'piptheme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix-20130115.js', array(), null, true );
@@ -193,17 +202,6 @@ function piptheme_get_parent_stylesheet_uri() {
 		return get_stylesheet_uri();
 	}
 }
-
-/* from https://dotlayer.com/what-is-migrate-js-why-and-how-to-remove-jquery-migrate-from-wordpress/ */
-function remove_jquery_migrate($scripts) {
-  if (! is_admin() && isset($scripts->registered['jquery'])) {
-    $script = $scripts->registered['jquery'];
-    if ($script->deps) {
-      $script->deps = array_diff($script->deps, array('jquery-migrate'));
-    }
-  }
-}
-add_action('wp_default_scripts', 'remove_jquery_migrate');
 
 /* from https://kinsta.com/knowledgebase/disable-emojis-wordpress/#disable-emojis-code */
 /**

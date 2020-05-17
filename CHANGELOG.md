@@ -51,4 +51,4 @@ Saturday May 16, 2020 Michael A. Peters
 * add timestamp to CSS filenames in `layouts/`
 * add timestamp to some JS files in `js/`
 * added `STATIC_RESOURCE.md` and notes about JS/CSS filenames
-* remove jQuery migrate
+* update core jQuery to 3.5.1
