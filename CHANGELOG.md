@@ -52,3 +52,9 @@ Saturday May 16, 2020 Michael A. Peters
 * add timestamp to some JS files in `js/`
 * added `STATIC_RESOURCE.md` and notes about JS/CSS filenames
 * update core jQuery to 3.5.1
+
+Sunday May 17, 2020 Michael A. Peters
+-------------------------------------
+
+* Change name of `style.css` to allow for more intelligent expires header.
+

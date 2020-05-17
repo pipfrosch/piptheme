@@ -64,7 +64,7 @@ This allows me to set up Apache for WordPress with the following directive:
       <IfModule mod_expires.c>
         ExpiresActive On
         <FilesMatch "\.(js|css)">
-          ExpiresDefault "access plus 1 days"
+          ExpiresDefault "access plus 7 days"
         </FilesMatch>
         <FilesMatch "-devel\.(js|css)">
           ExpiresDefault "access"
@@ -75,9 +75,13 @@ This allows me to set up Apache for WordPress with the following directive:
       </IfModule>
     </Directory>
 
+Of course other directives can be added, and different time periods can be
+added, the above is just an example of how to set up caching for CSS/JS in the
+Apache host configuration file.
+
 That tells Apache that by default, any file served with a `.js` or `.css` file
 extension will be sent with a header telling the browser it can cache the file
-for a day before it needs to check if a newer version exists.
+for a week before it needs to check if a newer version exists.
 
 For files that end in `-devel.js` or `-devel.css` that gets overridden and the
 browser is told to *always* check for a newer version of the file. That is
@@ -86,6 +90,9 @@ useful for when I am hacking on a theme or plugin and testing tweaks.
 For files that end in `-YYYYMMDD.js` or `-YYYYMMDD.css` then Apache tells the
 browser it does not need to check for a new version for an entire year. That is
 what I rename a file to once I am done hacking on it.
+
+Future Plugin
+-------------
 
 The way my CDN plugin will work, it will create a wrapper to the WordPress core
 functions so that when a file ends in `-YYYYMMDD.{js|css}` __and__ there is a
@@ -99,6 +106,9 @@ can verify it is getting a version of the file that has not been modified.
 
 When the database does not have a SHA-384 sum for the resource then the CDN
 will not be used as it is not secure to do so.
+
+Also
+----
 
 Also, using a timestamp as part of the filename makes it easier to revert to a
 previous version of the file in the event that a newer version is causing
