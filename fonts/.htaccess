@@ -4,6 +4,6 @@
 </IfModule>
 <IfModule mod_expires.c>
   ExpiresActive On
-  ExpiresByType font/woff "access plus 1 month"
-  ExpiresByType font/woff2 "access plus 1 month"
+  ExpiresByType font/woff "access plus 95 days"
+  ExpiresByType font/woff2 "access plus 95 days"
 </IfModule>
