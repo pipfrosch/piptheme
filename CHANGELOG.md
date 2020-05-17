@@ -50,4 +50,4 @@ Saturday May 16, 2020 Michael A. Peters
 * Fix the ordered list numbering
 * add timestamp to CSS filenames in `layouts/`
 * add timestamp to some JS files in `js/`
-
+* added `STATIC_RESOURCE.md` and notes about JS/CSS filenames
