@@ -95,7 +95,7 @@ function piptheme_setup() {
 endif; // piptheme_setup
 add_action( 'after_setup_theme', 'piptheme_setup' );
 
-add_filter('stylesheet_uri'. 'piptheme_versioned_style');
+add_filter('stylesheet_uri', 'piptheme_versioned_style');
 function piptheme_versioned_style() {
   /* when updating also change reference in piptheme_get_parent_stylesheet_uri() */
   return trailingslashit( get_template_directory_uri() ) . 'style-devel.css';
@@ -151,7 +151,7 @@ function piptheme_scripts() {
         }
 
         // Load parent theme stylesheet even when child theme is active
-        wp_enqueue_style( 'piptheme-style', piptheme_get_parent_stylesheet_uri() );
+        wp_enqueue_style( 'piptheme-style', piptheme_get_parent_stylesheet_uri(), array(), null );
 
         // Load layout stylesheet
         wp_enqueue_style( 'piptheme-layout' , get_template_directory_uri() . $layout_stylesheet, array(), null);
