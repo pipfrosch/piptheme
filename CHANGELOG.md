@@ -57,4 +57,5 @@ Sunday May 17, 2020 Michael A. Peters
 -------------------------------------
 
 * Change name of `style.css` to allow for more intelligent expires header.
+* Tweak the editor-style.css
 

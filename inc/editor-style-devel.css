@@ -24,11 +24,6 @@ img {
     height: auto;
 }
 
-a {
-	color: #000;
-        color: hsl(0, 0%, 0%);
-}
-
 a:visited {
 	color: #333;
         color: hsl(0, 0%, 20%);
@@ -38,7 +33,6 @@ h1, h2, h3, h4, h5, h6 {
 	clear: right;
         font-family: 'Lato', sans-serif;
         font-weight: 900;
-        color: #000;
         color: hsl(0, 0%, 0%);
         margin-bottom: .4em;
 }
