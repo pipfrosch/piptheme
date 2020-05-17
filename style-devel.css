@@ -29,6 +29,7 @@ PipTheme is based on Simone https://mor10.com/simone-wordpress-theme/ which  is 
 12.0 - Infinite scroll
 13.0 - Media
 14.0 - Footer
+15.0 - Pipfrosch Additions
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -1713,3 +1714,11 @@ object { max-width: 100%; }
 }
 
 .site-info { text-align: center; }
+
+/*----------------------------------------------------------------
+15 Pipfrosch additions
+----------------------------------------------------------------*/
+
+.taxon {
+  font-style: italic;
+}
