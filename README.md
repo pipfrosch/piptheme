@@ -42,10 +42,7 @@ header is sent with the fonts to allow the browser to cache them for one month.
 If your server is not Apache or if you disable `.htaccess` files within
 the web root, make sure your server is otherwise configured to send the correct
 MIME type for WOFF2 web fonts and that browsers know they can cache the web
-fonts for a long period of time. The cache time for the CSS is less critical,
-but since the `webfonts.min.css` file has a timestamp as part of the file name,
-browsers can be told to cache that file for much longer than they cache other
-CSS files as the filename will change if it is ever updated.
+fonts for a long period of time.
 
 Only WOFF2 versions of webfonts are included. With the exception of Opera Mini
 and IE 11, WOFF2 is supported by the most recent versions of every browser. For
