@@ -60,3 +60,10 @@ Sunday May 17, 2020 Michael A. Peters
 * Tweak the `editor-style.css`
 * Move most CSS files into `css/` -- `rtl.css` still in root as I do not know what loads it, `style.css` in root as special to WordPress.
 
+Monday May 18, 2020 Michael A. Peters
+-------------------------------------
+
+* Cleaned up most CSS files w/ respect to mixed spaces and tabs
+* Cleaned up functions.php w/ respect to mixed spaces and tabs
+
+
