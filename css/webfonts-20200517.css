@@ -6,56 +6,56 @@
   font-family: 'Clear Sans';
   font-weight: 100;
   font-style: normal;
-  src: local('Clear Sans Thin'), local('ClearSans Thin'), local('ClearSans-Thin'), url('ClearSans/fonts/ClearSans-Thin.woff2') format('woff2');
+  src: local('Clear Sans Thin'), local('ClearSans Thin'), local('ClearSans-Thin'), url('../fonts/ClearSans/ClearSans-Thin.woff2') format('woff2');
   font-display: swap;
 }
 @font-face {
   font-family: 'Clear Sans';
   font-weight: 300;
   font-style: normal;
-  src: local('Clear Sans Light'), local('ClearSans Light'), local('ClearSans-Light'), url('ClearSans/fonts/ClearSans-Light.woff2') format('woff2');
+  src: local('Clear Sans Light'), local('ClearSans Light'), local('ClearSans-Light'), url('../fonts/ClearSans/ClearSans-Light.woff2') format('woff2');
   font-display: swap;
 }
 @font-face {
   font-family: 'Clear Sans';
   font-weight: 400;
   font-style: normal;
-  src: local('Clear Sans Regular'), local('ClearSans Regular'), local('ClearSans-Regular'), url('ClearSans/fonts/ClearSans-Regular.woff2') format('woff2');
+  src: local('Clear Sans Regular'), local('ClearSans Regular'), local('ClearSans-Regular'), url('../fonts/ClearSans/ClearSans-Regular.woff2') format('woff2');
   font-display: swap;
 }
 @font-face {
   font-family: 'Clear Sans';
   font-weight: 400;
   font-style: italic;
-  src: local('Clear Sans Italic'), local('ClearSans Italic'), local('ClearSans-Italic'), url('ClearSans/fonts/ClearSans-Italic.woff2') format('woff2');
+  src: local('Clear Sans Italic'), local('ClearSans Italic'), local('ClearSans-Italic'), url('../fonts/ClearSans/ClearSans-Italic.woff2') format('woff2');
   font-display: swap;
 }
 @font-face {
   font-family: 'Clear Sans';
   font-weight: 500;
   font-style: normal;
-  src: local('Clear Sans Medium'), local('ClearSans Medium'), local('ClearSans-Medium'), url('ClearSans/fonts/ClearSans-Medium.woff2') format('woff2');
+  src: local('Clear Sans Medium'), local('ClearSans Medium'), local('ClearSans-Medium'), url('../fonts/ClearSans/ClearSans-Medium.woff2') format('woff2');
   font-display: swap;
 }
 @font-face {
   font-family: 'Clear Sans';
   font-weight: 500;
   font-style: italic;
-  src: local('Clear Sans MediumItalic'), local('ClearSans MediumItalic'), local('ClearSans-MediumItalic'), url('ClearSans/fonts/ClearSans-MediumItalic.woff2') format('woff2');
+  src: local('Clear Sans MediumItalic'), local('ClearSans MediumItalic'), local('ClearSans-MediumItalic'), url('../fonts/ClearSans/ClearSans-MediumItalic.woff2') format('woff2');
   font-display: swap;
 }
 @font-face {
   font-family: 'Clear Sans';
   font-weight: 700;
   font-style: normal;
-  src: local('Clear Sans Bold'), local('ClearSans Bold'), local('ClearSans-Bold'), url('ClearSans/fonts/ClearSans-Bold.woff2') format('woff2');
+  src: local('Clear Sans Bold'), local('ClearSans Bold'), local('ClearSans-Bold'), url('../fonts/ClearSans/ClearSans-Bold.woff2') format('woff2');
   font-display: swap;
 }
 @font-face {
   font-family: 'Clear Sans';
   font-weight: 700;
   font-style: italic;
-  src: local('Clear Sans BoldItalic'), local('ClearSans BoldItalic'), local('ClearSans-BoldItalic'), url('ClearSans/fonts/ClearSans-BoldItalic.woff2') format('woff2');
+  src: local('Clear Sans BoldItalic'), local('ClearSans BoldItalic'), local('ClearSans-BoldItalic'), url('../fonts/ClearSans/ClearSans-BoldItalic.woff2') format('woff2');
   font-display: swap;
 }
 /*!
@@ -66,28 +66,28 @@
   font-family: 'Lato';
   font-weight: 100;
   font-style: normal;
-  src: local('Lato Thin'), local('Lato-Thin'), url('Lato/fonts/Lato-Thin.woff2') format('woff2');
+  src: local('Lato Thin'), local('Lato-Thin'), url('../fonts/Lato/Lato-Thin.woff2') format('woff2');
   font-display: swap;
 }
 @font-face {
   font-family: 'Lato';
   font-weight: 100;
   font-style: italic;
-  src: local('Lato Thin Italic'), local('Lato-ThinItalic'), url('Lato/fonts/Lato-ThinItalic.woff2') format('woff2');
+  src: local('Lato Thin Italic'), local('Lato-ThinItalic'), url('../fonts/Lato/Lato-ThinItalic.woff2') format('woff2');
   font-display: swap;
 }
 @font-face {
   font-family: 'Lato';
   font-weight: 300;
   font-style: normal;
-  src: local('Lato Light'), local('Lato-Light'), url('Lato/fonts/Lato-Light.woff2') format('woff2');
+  src: local('Lato Light'), local('Lato-Light'), url('../fonts/Lato/Lato-Light.woff2') format('woff2');
   font-display: swap;
 }
 @font-face {
   font-family: 'Lato';
   font-weight: 300;
   font-style: italic;
-  src: local('Lato Light Italic'), local('Lato-LightItalic'), url('Lato/fonts/Lato-LightItalic.woff2') format('woff2');
+  src: local('Lato Light Italic'), local('Lato-LightItalic'), url('../fonts/Lato/Lato-LightItalic.woff2') format('woff2');
   font-display: swap;
 }
 
@@ -95,42 +95,42 @@
   font-family: 'Lato';
   font-weight: 400;
   font-style: normal;
-  src: local('Lato Regular'), local('Lato-Regular'), url('Lato/fonts/Lato-Regular.woff2') format('woff2');
+  src: local('Lato Regular'), local('Lato-Regular'), url('../fonts/Lato/Lato-Regular.woff2') format('woff2');
   font-display: swap;
 }
 @font-face {
   font-family: 'Lato';
   font-weight: 400;
   font-style: italic;
-  src: local('Lato Italic'), local('Lato-Italic'), url('Lato/fonts/Lato-Italic.woff2') format('woff2');
+  src: local('Lato Italic'), local('Lato-Italic'), url('../fonts/Lato/Lato-Italic.woff2') format('woff2');
   font-display: swap;
 }
 @font-face {
   font-family: 'Lato';
   font-weight: 700;
   font-style: normal;
-  src: local('Lato Bold'), local('Lato-Bold'), url('Lato/fonts/Lato-Bold.woff2') format('woff2');
+  src: local('Lato Bold'), local('Lato-Bold'), url('../fonts/Lato/Lato-Bold.woff2') format('woff2');
   font-display: swap;
 }
 @font-face {
   font-family: 'Lato';
   font-weight: 700;
   font-style: italic;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url('Lato/fonts/Lato-BoldItalic.woff2') format('woff2');
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url('../fonts/Lato/Lato-BoldItalic.woff2') format('woff2');
   font-display: swap;
 }
 @font-face {
   font-family: 'Lato';
   font-weight: 900;
   font-style: normal;
-  src: local('Lato Black'), local('Lato-Black'), url('Lato/fonts/Lato-Black.woff2') format('woff2');
+  src: local('Lato Black'), local('Lato-Black'), url('../fonts/Lato/Lato-Black.woff2') format('woff2');
   font-display: swap;
 }
 @font-face {
   font-family: 'Lato';
   font-weight: 900;
   font-style: italic;
-  src: local('Lato Black Italic'), local('Lato-BlackItalic'), url('Lato/fonts/Lato-BlackItalic.woff2') format('woff2');
+  src: local('Lato Black Italic'), local('Lato-BlackItalic'), url('../fonts/Lato/Lato-BlackItalic.woff2') format('woff2');
   font-display: swap;
 }
 /*!
@@ -139,7 +139,7 @@
  */
 @font-face {
   font-family: 'FontAwesome';
-  src: url('font-awesome/fonts/fontawesome-webfont.woff2') format('woff2'), url('font-awesome/fonts/fontawesome-webfont.woff') format('woff');
+  src: url('../fonts/font-awesome/fontawesome-webfont.woff2') format('woff2'), url('../fonts/font-awesome/fontawesome-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

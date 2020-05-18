@@ -107,6 +107,30 @@ can verify it is getting a version of the file that has not been modified.
 When the database does not have a SHA-384 sum for the resource then the CDN
 will not be used as it is not secure to do so.
 
+It should be noted that when your website is *only* served over HTTPS and the
+resources are served __FROM__ the same website, the benefit of SRI is only
+marginal, HTTPS signs the files it sends, ensuring to the client that the
+file has not been modified since it left your server. SRI can verify that it
+has not been altered on your server, but if a hacker can modify a resource on
+your server they can also modify the SRI checksum tags.
+
+Where SRI is of benefit is when the resource is hosted on a different server
+than the web page that calls it, such as a CDN.
+
+The plugin I plan to work on (have not yet started) will only add the SRI
+attributes for files served from a CDN. It will not add them for files that
+are served from the WordPress host.
+
+Note that while a CDN can improve site performance, it will also brick your
+site if the CDN goes down. Part of the plugin will involve making sure that a
+file can be retrieved from the CDN every 5 minutes and not using the CDN if
+that retrieval fails to help keep the website available in the event of a CDN
+failure.
+
+Donations to work on this plugin will motivate me, but I will get to it at some
+point anyway.
+
+
 Also
 ----
 

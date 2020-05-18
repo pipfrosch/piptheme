@@ -57,5 +57,6 @@ Sunday May 17, 2020 Michael A. Peters
 -------------------------------------
 
 * Change name of `style.css` to allow for more intelligent expires header.
-* Tweak the editor-style.css
+* Tweak the `editor-style.css`
+* Move most CSS files into `css/` -- `rtl.css` still in root as I do not know what loads it, `style.css` in root as special to WordPress.
 
