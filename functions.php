@@ -89,7 +89,10 @@ function piptheme_setup() {
     'comment-form',
     'gallery',
     'caption',
+    'script',
+    'style',
   ));
+  
 }
 endif; // piptheme_setup
 add_action('after_setup_theme', 'piptheme_setup');
