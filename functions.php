@@ -126,13 +126,13 @@ add_action('widgets_init', 'piptheme_widgets_init');
  * Enqueue scripts and styles.
  */
 
-function update_core_jquery() {
-  wp_deregister_script('jquery-core');
-  wp_register_script('jquery-core', get_template_directory_uri() . '/js/jquery-3.5.1.min-20200516.js', array(), null);
-  wp_deregister_script('jquery-migrate');
-  wp_register_script('jquery-migrate', get_template_directory_uri() . '/js/jquery-migrate-3.3.0.min-20200516.js', array(), null);
-}
-add_action( 'wp_enqueue_scripts', 'update_core_jquery' );
+//function update_core_jquery() {
+//  wp_deregister_script('jquery-core');
+//  wp_register_script('jquery-core', get_template_directory_uri() . '/js/jquery-3.5.1.min-20200516.js', array(), null);
+//  wp_deregister_script('jquery-migrate');
+//  wp_register_script('jquery-migrate', get_template_directory_uri() . '/js/jquery-migrate-3.3.0.min-20200516.js', array(), null);
+//}
+//add_action( 'wp_enqueue_scripts', 'update_core_jquery' );
 
 /**
  * Returns parent stylesheet URI
